@@ -34,7 +34,14 @@ It is a Travel Website made with React Js 😊
 - Neelakshi Das[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/neelakshi-das-b0ba68244/)
 - Anushka Bhowmick[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushkabhowmick/)
 - Sritama Karfa[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sritama-karfa-568947271/)
+  
+## Tracks
+- Best all girls team
+- Best use of github
+- Best UI/UX
+- Best responsive design
 
+  
   ## Deployment 🔗
 
 the deploied website link
