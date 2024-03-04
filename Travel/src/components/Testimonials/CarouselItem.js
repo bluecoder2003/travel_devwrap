@@ -8,7 +8,7 @@ import './Carousel.css';
 function CarouSel() {
     return (
         <div id="testimonials" className="carousel-container">
-            <h1 className="testimonials-heading">Testimonials</h1>
+            <h2 className="testimonials-heading">Testimonials</h2>
             <Carousel>
                 <Carousel.Item>
                     <img
