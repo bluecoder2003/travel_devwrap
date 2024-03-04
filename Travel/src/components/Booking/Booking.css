@@ -122,3 +122,10 @@
       flex-direction: column;
     }
   }
+  @media (max-width:480px){
+
+    .booking-image
+    {
+      display: none;
+    }
+  }

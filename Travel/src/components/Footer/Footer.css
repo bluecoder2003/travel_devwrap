@@ -86,7 +86,10 @@
 .copyright-text
 {
   margin:0;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
 }
 @media (max-width:991px)
 {

@@ -12,3 +12,16 @@
     margin-bottom: 100px;
     color: #fff;
 }
+@media (max-width: 768px) {
+    .testimonials-heading {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-heading {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}
