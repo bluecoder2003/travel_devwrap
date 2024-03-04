@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className="about-container">
     <div className="about-section">
             <div className="text-section">
-                <h1>ABOUT US</h1>
+                <h2>ABOUT US</h2>
                 <p>Welcome to <b>Travela</b>, where seamless travel experiences await! As passionate adventurers ourselves, we're dedicated to redefining the way you explore the world.
 
                     With a user-friendly booking platform offering flights and train tickets tailored to your preferences and budget, we make planning your journey a breeze. But we're more than just a booking site – we're your trusted companion, offering expert guidance and fostering a vibrant community of fellow travelers through our review section.
