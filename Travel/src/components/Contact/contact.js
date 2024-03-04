@@ -27,7 +27,7 @@ class Contact extends Component {
 
   render() {
     return this.state.isFormVisible ? (
-      <div className="contact-container">
+      <div id="contact" className="contact-container">
         <div className="contact-form">
           <div className="title">
             <h4>Contact Us</h4>

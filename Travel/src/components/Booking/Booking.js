@@ -40,7 +40,7 @@ const Carousel = ({ cards }) => {
   }, [cards]);
 
   return (
-    <div className="card-container">
+    <div id="booking" className="card-container">
       {cards.map((card, index) => (
         <div className={`card ${index === currentCardIndex ? 'active' : ''}`} key={index}>
           <img className="card-image" src={card.image} alt={card.title} />

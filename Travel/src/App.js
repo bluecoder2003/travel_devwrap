@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel';
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -11,15 +10,15 @@ import CarouSel from "./components/Testimonials/CarouselItem";
 
 export default function App() {
   return (
-    <div className="main">
+    <div>
       <Navbar />
-      <Home />
-      <About/>
-      <Booking/>
-      <Destination/>
-      <CarouSel/>
-      <Contact/>
-      <Footer/>
+      <Home id="home" />
+      <About id="about" />
+      <Booking id="booking" />
+      <Destination id="testimonials" />
+      <CarouSel />
+      <Contact id="contact" />
+      <Footer />
     </div>
   );
 }

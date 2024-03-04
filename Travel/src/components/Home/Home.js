@@ -7,7 +7,7 @@ import './Home.css'
 
 const Home = () => {
   return (
-    <div className='main__container section__padding'>
+    <div id="home" className='main__container section__padding'>
       <p className='text glow'>
       <span className='special-font no-glow'>Discover, Explore, Wander</span> - Your Ultimate Travel Companion!
       </p>

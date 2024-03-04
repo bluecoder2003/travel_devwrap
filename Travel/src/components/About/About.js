@@ -3,7 +3,7 @@ import image from "../../assets/About.png"
 import "../About/About.css"
 const About = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
     <div className="about-section">
             <div className="text-section">
                 <h1>ABOUT US</h1>
