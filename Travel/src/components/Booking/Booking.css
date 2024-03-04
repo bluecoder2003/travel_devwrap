@@ -122,3 +122,8 @@
       flex-direction: column;
     }
   }
+  @media(max-width:712px){
+    .booking-section{
+      display:none;
+    }
+  }
