@@ -19,7 +19,7 @@
     font-weight: 700;
     justify-content: space-evenly ;
     z-index: 2;
-    padding: 0 150px; 
+    padding: 0 70px; 
     margin-top: 10%;
 }
 .special-font {
@@ -70,7 +70,22 @@
   .bookTripButton:active {
     transform: translateY(2px);
   }
-
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    animation: rotate 4s linear infinite; /* Apply the rotation animation */
+  
+    @keyframes rotate {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg);
+  }
+}}
   @media (max-width: 718px) {
     .block{
       display: none;

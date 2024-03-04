@@ -1,6 +1,6 @@
 .carousel-container {
     background-color: rgba(22, 34, 55, 1);
-    padding: 200px 0; 
+    padding: 100px 0; 
 }
 
 .carousel-item img {
@@ -8,7 +8,22 @@
     object-fit: contain; 
 }
 .testimonials-heading {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-bottom: 100px;
     color: #fff;
+}
+@media (max-width: 768px) {
+    .testimonials-heading {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-heading {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
 }
