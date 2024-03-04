@@ -11,7 +11,7 @@ import CarouSel from "./components/Testimonials/CarouselItem";
 
 export default function App() {
   return (
-    <div>
+    <div className="main">
       <Navbar />
       <Home />
       <About/>

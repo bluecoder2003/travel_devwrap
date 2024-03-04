@@ -39,7 +39,7 @@ const Book = () => {
 };
 
 const BookingSection = styled.section`
-  background-color: #0B6488;
+  background-color: rgba(22, 34, 55, 1);
   box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
   padding: 4rem 0;
 `;
@@ -50,6 +50,9 @@ const BookingContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media(max-width:898px){
+    flex-direction: column;
+  }
 `;
 
 const BookingContent = styled.div`
@@ -107,6 +110,8 @@ const FormButton = styled.button`
 const MapContainer = styled.div`
   flex: 1;
   height: 400px;
+ justify-content:center;
+ align-items:center;
 `;
 
 const MapImage = styled.img`
