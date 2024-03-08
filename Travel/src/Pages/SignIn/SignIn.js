@@ -2,7 +2,7 @@ import React from 'react'
 import './SignIn.css'
 const SignIn = () => {
   return (
-    <div id="signin" class="container">
+    <div id="signin" class="signin-container">
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">

@@ -17,9 +17,9 @@ const Home = () => {
 
         
       <div className='auth-buttons'>
-      {/* <Link to="/signin"><button className='login'>My Account</button></Link> */}
+      
       <button className='login'onClick={gotosignin}>My Account</button>
-        {/* <button className='register'>Register</button> */}
+       
       </div>
 
       <p className='text glow'>
