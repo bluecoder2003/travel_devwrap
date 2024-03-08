@@ -5,16 +5,17 @@ import standardRoomImage from "../../assets/japan.png";
 import deluxeRoomImage from "../../assets/cuba.png";
 import suiteImage from "../../assets/paris.png";
 import bookingImage from "../../assets/circle.png";
+import { useNavigate } from "react-router-dom";
 
 const sampleCards = [
   {
-    title: "Standard Room",
+    title: "Singapore",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$100 per night",
     image: standardRoomImage,
   },
   {
-    title: "Deluxe Room",
+    title: "New Zealand",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$150 per night",
     image: deluxeRoomImage,
@@ -28,6 +29,10 @@ const sampleCards = [
 ];
 
 const Carousel = ({ cards }) => {
+  const navigate=useNavigate();
+  const gotoSingapore=()=>{
+    navigate("/singapore");
+  }
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
 
   useEffect(() => {
@@ -47,7 +52,7 @@ const Carousel = ({ cards }) => {
           <h3 className="card-title">{card.title}</h3>
           <p className="card-description">{card.description}</p>
           <p className="price">{card.price}</p>
-          <button className="book-button">Know More</button>
+          <button className="book-button" onClick={gotoSingapore}>Know More</button>
         </div>
       ))}
     </div>

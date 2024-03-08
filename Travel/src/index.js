@@ -6,11 +6,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
-
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Singapore from './Pages/Singapore';
+const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <App/>,
+  },
+  {
+    path: "/singapore",
+    element: <Singapore/>,
+},
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

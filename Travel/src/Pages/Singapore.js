@@ -3,7 +3,7 @@ import React from 'react'
 const Singapore = () => {
   return (
     <div>
-      
+      Singapore
     </div>
   )
 }
