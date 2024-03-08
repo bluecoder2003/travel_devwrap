@@ -1,11 +1,15 @@
-.getintouch {
+.contact-container{
     background-color: rgba(22, 34, 55, 1);
+    
+}.getintouch {
+    
     padding: 100px 100px; 
 }
 
 .title {
     text-align: center;
     font-size: 30px;
+    padding-top: 50px;
     margin-bottom: 40px;
     color: #fff; 
 }
@@ -113,9 +117,9 @@
 .contact-form {
     width: 50%;
     padding: 20px;
-    background-color: rgba(22, 34, 55, 1);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(22, 34, 55, 1); */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .contact-form .title {
@@ -149,7 +153,7 @@
 }
 
 .contact-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -168,5 +172,8 @@
 
     .contact-form .btn {
         width: 100%;
+    }
+    .contact-image img{
+        display:none;
     }
 }

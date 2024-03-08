@@ -2,6 +2,8 @@
     padding: 2rem;
     background-color:rgba(22, 34, 55, 1);
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }.booking-section {
     padding: 2rem;
   }
@@ -54,6 +56,7 @@
   
   .booking-title {
     text-align: center;
+    padding-top: 50px;
     margin-bottom: 2rem;
     color: #fff;
   }

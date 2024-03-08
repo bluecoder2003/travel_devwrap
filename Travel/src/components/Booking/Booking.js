@@ -47,7 +47,7 @@ const Carousel = ({ cards }) => {
           <h3 className="card-title">{card.title}</h3>
           <p className="card-description">{card.description}</p>
           <p className="price">{card.price}</p>
-          <button className="book-button">Book Now</button>
+          <button className="book-button">Know More</button>
         </div>
       ))}
     </div>

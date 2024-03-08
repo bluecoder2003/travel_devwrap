@@ -11,6 +11,9 @@
 {
     padding: 2rem;
 } */
+.main{
+    background-color: rgba(22, 34, 55, 1);
+}
 :root{
     --background: #162237;
     --primary_color: rgb(198, 43, 102);
