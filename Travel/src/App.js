@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -8,39 +7,31 @@ import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/Footer";
 import Destination from "./components/Destination/Destination";
 import CarouSel from "./components/Testimonials/CarouselItem";
-import Signin from "../src/components/SignIn/SignIn";
 import "../src/App.css"
 
-// export default function App() {
-//   const [showChat, setShowChat] = useState(false);
+export default function App() {
+  const [showChat, setShowChat] = useState(false);
 
-//   const toggleChat = () => {
-//     setShowChat(!showChat);
-//   }
-  function MainPage() {
-    return (
-      <>
-        <Navbar />
-        <Home id="home" />
-        <About id="about" />
-        <Booking id="booking" />
-        <Destination id="testimonials" />
-        <Contact id="contact" />
-        <Footer />
-      </>
-    );
+  const toggleChat = () => {
+    setShowChat(!showChat);
   }
-  export default function App() {
-    return (
-      <Router>
-        <div>
-          
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/signin" element={<Signin />} />
-          </Routes>
-          
-        </div>
-      </Router>
-    );
-  }
+
+  return (
+    <div>
+      <Navbar />
+      <Home id="home" />
+      <About id="about" />
+      <Booking id="booking" />
+      <Destination id="testimonials" />
+      <CarouSel />
+      <Contact id="contact" />
+      <Footer />
+      <div className="chatbot-window">
+  {showChat && <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/7618e208-71b2-40dc-8fb1-d8a76d3de3b9"></iframe>}
+</div>
+<button onClick={toggleChat} className="chat-button">
+  {showChat ? 'Hide Chat' : 'Show Chat'}
+</button>
+    </div>
+  );
+}

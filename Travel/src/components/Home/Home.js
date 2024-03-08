@@ -12,7 +12,8 @@ const Home = () => {
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />
 
       <div className='auth-buttons'>
-      <Link to="/signin"><button className='login'>My Account</button></Link>
+      {/* <Link to="/signin"><button className='login'>My Account</button></Link> */}
+      <button className='login'>My Account</button>
         {/* <button className='register'>Register</button> */}
       </div>
 
