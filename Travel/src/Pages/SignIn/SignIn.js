@@ -1,5 +1,7 @@
 import React from 'react'
 import './SignIn.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 const SignIn = () => {
   return (
     <div id="signin" class="signin-container">
@@ -18,18 +20,9 @@ const SignIn = () => {
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+            <FontAwesomeIcon className="social-icons" icon={faFacebook} size="2x" />
+            <FontAwesomeIcon className="social-icons" icon={faTwitter} size="2x" />
+            <FontAwesomeIcon className="social-icons" icon={faInstagram} size="2x" />
             </div>
           </form>
           <form action="#" class="sign-up-form">

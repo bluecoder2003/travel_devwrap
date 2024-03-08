@@ -91,6 +91,11 @@
   align-items: center;
   font-size: larger;
 }
+.heart{
+  margin-left: 5px;
+  margin-right:5px;
+  color:red;
+}
 @media (max-width:991px)
 {
   .site-footer [class^=col-]

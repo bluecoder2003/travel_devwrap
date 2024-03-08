@@ -13,7 +13,9 @@
     margin-bottom: 40px;
     color: #fff; 
 }
-
+.for{
+    width:100%;
+}
 .sub-title {
     font-size: 36px;
     font-weight: bold;
@@ -117,9 +119,7 @@
 .contact-form {
     width: 50%;
     padding: 20px;
-    /* background-color: rgba(22, 34, 55, 1); */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    
 }
 
 .contact-form .title {
@@ -127,6 +127,7 @@
 }
 
 .contact-form .form-group {
+    width: 80%;
     margin-bottom: 20px;
 }
 
