@@ -7,8 +7,13 @@ import Logo from '../../assets/TRAVELLO.png'; // Import the logo image from asse
 
 const Home = () => {
   return (
-    <div id="home" className='main__container section__padding'>
+    <div id="home" className='main_container section_padding'>
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />
+
+      <div className='auth-buttons'>
+        <button className='login'>My Account</button>
+        {/* <button className='register'>Register</button> */}
+      </div>
 
       <p className='text glow'>
         <span className='special-font no-glow'>Discover, Explore, Wander</span> - Your Ultimate Travel Companion!
