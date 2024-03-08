@@ -7,6 +7,7 @@ import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/Footer";
 import Destination from "./components/Destination/Destination";
 import CarouSel from "./components/Testimonials/CarouselItem";
+import Login from "./components/LogIn/LogIn";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Destination id="testimonials" />
       <CarouSel />
       <Contact id="contact" />
+      <Login id="login" />  
       <Footer />
     </div>
   );

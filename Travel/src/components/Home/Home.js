@@ -4,15 +4,16 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
 import './Home.css';
 import Logo from '../../assets/TRAVELLO.png'; // Import the logo image from assets folder
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div id="home" className='main_container section_padding'>
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />
 
+        
       <div className='auth-buttons'>
         <button className='login'>My Account</button>
-        {/* <button className='register'>Register</button> */}
       </div>
 
       <p className='text glow'>
