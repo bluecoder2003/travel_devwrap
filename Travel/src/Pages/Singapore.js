@@ -11,7 +11,7 @@ import image3 from '../assets/image3.jpg';
 const Singapore = () => {
   return (
     <div>
-      <Carousel autoPlay infiniteLoop className="carousel">
+      {/* <Carousel autoPlay infiniteLoop className="carousel">
         <div>
           <img src={image1} alt="Singapore 1" />
         </div>
@@ -21,7 +21,10 @@ const Singapore = () => {
         <div>
           <img src={image3} alt="Singapore 3" />
         </div>
-      </Carousel>
+      </Carousel> */}
+      <div className="myDiv">
+        <img src={image1} alt="Descriptive text" className="myImage" />
+      </div>
       <button className="book-plan">Book Plan</button>
     </div>
   );

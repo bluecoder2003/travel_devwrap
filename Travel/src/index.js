@@ -7,11 +7,16 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import SignIn from '../src/Pages/SignIn/SignIn';
 import Singapore from './Pages/Singapore';
 const router = createBrowserRouter([
   {
       path: "/",
       element: <App/>,
+  },
+  {
+    path: "/signin",
+    element: <SignIn/>,
   },
   {
     path: "/singapore",

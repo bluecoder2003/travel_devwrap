@@ -1,19 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoMdPerson } from "react-icons/io";
 import './Home.css';
-import Logo from '../../assets/TRAVELLO.png'; // Import the logo image from assets folder
-import { Link } from 'react-router-dom';
-
+import Logo from '../../assets/TRAVELLO.png'; 
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigate=useNavigate();
+  const gotosignin=()=>{
+    navigate("/signin");
+  }
   return (
     <div id="home" className='main_container section_padding'>
       <img src={Logo} alt="Logo" className="logo" style={{ width: '150px', height: 'auto' }} />
 
         
       <div className='auth-buttons'>
-        <button className='login'>My Account</button>
+      {/* <Link to="/signin"><button className='login'>My Account</button></Link> */}
+      <button className='login'onClick={gotosignin}>My Account</button>
+        {/* <button className='register'>Register</button> */}
       </div>
 
       <p className='text glow'>
