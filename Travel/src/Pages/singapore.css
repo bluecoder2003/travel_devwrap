@@ -2,12 +2,34 @@
     margin:0;
     padding:0;
 }
-
-carousel{
+.carousel .carousel .slide {
+    background: none;
+  }
+  
+  .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border: none;
+  }
+  
+  .carousel .control-next.control-arrow:before {
+    content: '>';
+    margin-left: -13px;
+    color: #2f3e46;
+  }
+  
+  .carousel .control-prev.control-arrow:before {
+    content: '<';
+    margin-right: -13px;
+    color: #2f3e46;
+  }
+  
+  .carousel .carousel-status {
+    color: #2f3e46;
+  }
+  
+  .carousel .slide img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f2f2f2;
-}
+    height: auto;
+    display: block;
+    position: relative;
+    margin: auto;
+  }
