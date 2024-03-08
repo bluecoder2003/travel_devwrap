@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "./Booking.css"
-import standardRoomImage from "../../assets/japan.png";
+import standardRoomImage from "../../assets/singaporecartoon.png";
 import deluxeRoomImage from "../../assets/cuba.png";
 import suiteImage from "../../assets/paris.png";
 import bookingImage from "../../assets/circle.png";
@@ -10,18 +10,18 @@ import { useNavigate } from "react-router-dom";
 const sampleCards = [
   {
     title: "Singapore",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    price: "$100 per night",
+    description: "In Singapore, a vibrant fusion of cultures creates a tapestry of flavors, traditions, and innovation.",
+    price: "Cultures Collide, Innovation Thrives",
     image: standardRoomImage,
   },
   {
-    title: "New Zealand",
+    title: "India",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$150 per night",
     image: deluxeRoomImage,
   },
   {
-    title: "Suite",
+    title: "Europe",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "$200 per night",
     image: suiteImage,
