@@ -107,27 +107,25 @@ const Singapore = () => {
         <form onSubmit={handleSubmit}>
           <label>
             First Name:
-            <input type="text" name="firstName" value={traveler.firstName} onChange={handleChange} />
+            <input className="in" type="text" name="firstName" value={traveler.firstName} onChange={handleChange} />
           </label>
           <label>
             Last Name:
-            <input type="text" name="lastName" value={traveler.lastName} onChange={handleChange} />
+            <input className="in" type="text" name="lastName" value={traveler.lastName} onChange={handleChange} />
           </label>
           <label>
             Email:
-            <input type="email" name="email" value={traveler.email} onChange={handleChange} />
+            <input className="in" type="email" name="email" value={traveler.email} onChange={handleChange} />
           </label>
           <label>
             Phone:
-            <input type="tel" name="phone" value={traveler.phone} onChange={handleChange} />
+            <input className="in" type="tel" name="phone" value={traveler.phone} onChange={handleChange} />
           </label>
           <input type="submit" value="Submit" />
         </form>
       </div>
         </div>
-        <div className="button-container">
-          <button className="book-plan section-margin" onClick={handleBookPlan}>Book Plan</button>
-        </div>
+       
       </div>
       <div className='buy'>
       <GooglePayButton
