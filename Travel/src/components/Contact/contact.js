@@ -28,9 +28,10 @@ class Contact extends Component {
   render() {
     return this.state.isFormVisible ? (
       <div id="contact" className="contact-container">
+         
         <div className="contact-form">
-          <div className="title">
-            <h4>Contact Us</h4>
+        <div className="title">
+            <h2>Contact Us</h2>
           </div>
           <form ref={this.form} onSubmit={this.sendEmail} className="for">
             <div className="form-group">

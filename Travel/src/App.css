@@ -21,8 +21,8 @@
   }
   .chat-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 30px;
     background-image: url("../src/assets/bot.png"); /* replace with the path to your image */
     background-size: cover; /* adjust as needed */
     color: white;
@@ -45,3 +45,18 @@
     --pc-medium:40px;
     --pc-small:20px;
 }
+@media (max-width:800px) {
+    .chat-button {
+      bottom: 10px;
+      right: 10px;
+      width: 40px; /* adjust as needed */
+      height: 40px; /* adjust as needed */
+    }
+  
+    .chatbot-window {
+      bottom: 50px;
+      right: 10px;
+      width: 90%; /* adjust as needed */
+    }
+  }
+  @media (max-width: 1400px)
