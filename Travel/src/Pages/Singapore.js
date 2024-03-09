@@ -33,7 +33,7 @@ const Singapore = () => {
                     <span class="circle"></span>
                 </div>
             </div>
-            <div class="timeline-item">
+            <div class="timeline-item section_margin">
                 <div class="timeline-item-content">
                     <span class="tag">Tag</span>
                     <time>Day 2</time>
