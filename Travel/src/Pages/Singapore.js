@@ -104,23 +104,25 @@ const Singapore = () => {
         <div className="traveler-form section_margin">
         <h4>Traveler's Details</h4>
         <form onSubmit={handleSubmit}>
-          <label>
+          <label className="l1">
             First Name:
             <input type="text" name="firstName" value={traveler.firstName} onChange={handleChange} />
           </label>
-          <label>
+          <label className="l1">
             Last Name:
             <input type="text" name="lastName" value={traveler.lastName} onChange={handleChange} />
           </label>
-          <label>
+          <label className="l1">
             Email:
             <input type="email" name="email" value={traveler.email} onChange={handleChange} />
           </label>
-          <label>
+          <label className="l1">
             Phone:
             <input type="tel" name="phone" value={traveler.phone} onChange={handleChange} />
-          </label>
+            </label>
+            <label className="l1">
           <input type="submit" value="Submit" />
+          </label>
         </form>
       </div>
         </div>

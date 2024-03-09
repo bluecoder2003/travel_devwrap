@@ -320,7 +320,17 @@ h1 {
 
 
 
+
+
+
+
+
+  /* Style the form */
 .traveler-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     margin: 0 auto;
     width: 50%;
     padding: 20px;
@@ -333,48 +343,49 @@ h1 {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );  
-  }
-  
-  .traveler-form h4 {
-    text-align: center;
     color: var(--text_color);
   }
   
-  .traveler-form form {
+  /* Style the labels */
+  .l1 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    width: 100%;
   }
   
-  .traveler-form label {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--text_color);
-  }
-  
-  .traveler-form input[type="text"],
-  .traveler-form input[type="email"],
-  .traveler-form input[type="tel"] {
+  /* Style the input fields */
+  .l1 input[type="text"], 
+  .l1 input[type="email"], 
+  .l1 input[type="tel"] {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
-  .traveler-form input[type="submit"] {
+  /* Style the submit button */
+  .l1 input[type="submit"] {
     padding: 10px 20px;
-    background-color: var(--background);
-    color: white;
     border: none;
     border-radius: 4px;
+    background-color: var(--primary_color);
+    color: white;
     cursor: pointer;
-    margin-top: 10px;
-    display:flex ;
-    justify-content:space-around;
-    transition: background-color 0.3s ease;
   }
   
-  .traveler-form input[type="submit"]:hover {
-    background-color: var(--primary_color);
+  .l1 input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 768px) {
+    .traveler-form {
+      width: 90%;
+    }
+  
+    .l1 input[type="text"],
+    .l1 input[type="email"],
+    .l1 input[type="tel"] {
+      padding: 5px;
+      font-size: 14px; /* Adjust as needed */
+    }
   }
