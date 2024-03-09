@@ -27,7 +27,7 @@
     background-size: cover; /* adjust as needed */
     color: white;
     border-radius: 50%;
-    width: 60px; /* adjust as needed */
+    width: 80px; /* adjust as needed */
     height: 60px; /* adjust as needed */
     padding: 10px;
     text-align: center;
@@ -46,3 +46,22 @@
     --pc-medium:40px;
     --pc-small:20px;
 }
+/* This will change the width of the scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* This will change the background color of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, var(--background), var(--text_color2)); /* Replace with your desired colors */
+  }
+  
+  /* This will change the color of the scroll thumb (the part you drag) */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary_color);
+  }
+  
+  /* This will change the color of the scroll thumb when you hover over it */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #850a3d;
+  }

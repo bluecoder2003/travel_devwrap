@@ -1,7 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import '../../src/Pages/singapore.css'; 
+import React, { useState } from 'react';
 
 // Import your images
 import image1 from '../assets/image1.jpg';
@@ -10,6 +11,22 @@ import image3 from '../assets/image3.jpg';
 import image4 from '../assets/singapore_cityscape.jpg';
 
 const Singapore = () => {
+  const [traveler, setTraveler] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+  });
+
+  const handleChange = (e) => {
+    setTraveler({ ...traveler, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g., send data to server
+    console.log(traveler);
+  };
   return (
     <>
       <div className="singapore-page">
@@ -70,6 +87,28 @@ const Singapore = () => {
                 </div>
             </div>
         </div>
+        <div className="traveler-form section_margin">
+        <h4>Traveler's Details</h4>
+        <form onSubmit={handleSubmit}>
+          <label>
+            First Name:
+            <input type="text" name="firstName" value={traveler.firstName} onChange={handleChange} />
+          </label>
+          <label>
+            Last Name:
+            <input type="text" name="lastName" value={traveler.lastName} onChange={handleChange} />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" value={traveler.email} onChange={handleChange} />
+          </label>
+          <label>
+            Phone:
+            <input type="tel" name="phone" value={traveler.phone} onChange={handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
         </div>
         <div className="button-container">
           <button className="book-plan section-margin">Book Plan</button>
