@@ -39,8 +39,31 @@ h4
     font-size: bolder;
 
 }
-
-
+/* .gpay-card-info-animation-container.black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+}
+.gpay-card-info-placeholder-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+} */
+.google-pay-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    padding-bottom: 20px;
+}
 
 
 
@@ -271,3 +294,110 @@ h1 {
     background-color: var(--secondary_color2); /* Darker green background on hover */
   }
 
+  @media only screen and (max-width: 800px) {
+    .singapore-page {
+        padding: 10px;
+    }
+
+    .pic {
+        height: 40vh;
+        border-radius: 6px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .plan {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .timeline-container {
+        margin: 20px 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .timeline-item-content {
+        max-width: 100%;
+        padding: 10px;
+        width: 90%;
+    }
+    .timeline-container::after {
+       display: none;
+    }
+
+    .button-container {
+        height: 20vh;
+    }
+
+    .book-plan {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+.traveler-form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    /* background-color: #f2f2f2; */
+    border-radius: 5px;
+    color:var(--text_color2);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(13, 18, 84, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+  }
+  
+  .traveler-form h4 {
+    text-align: center;
+    color: var(--text_color);
+  }
+  
+  .traveler-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .traveler-form label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text_color);
+  }
+  
+  .traveler-form input[type="text"],
+  .traveler-form input[type="email"],
+  .traveler-form input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .traveler-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--background);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display:flex ;
+    justify-content:space-around;
+    transition: background-color 0.3s ease;
+  }
+  
+  .traveler-form input[type="submit"]:hover {
+    background-color: var(--primary_color);
+  }

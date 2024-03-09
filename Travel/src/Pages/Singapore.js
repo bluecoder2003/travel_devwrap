@@ -1,8 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import '../Pages/singapore.css';
-
+import '../../src/Pages/singapore.css'; 
+import React, { useState } from 'react';
+import GooglePayButton from '@google-pay/button-react';
 // Import your images
 import image1 from '../assets/image1.jpg';
 import image2 from '../assets/image2.jpg';
@@ -10,8 +11,39 @@ import image3 from '../assets/image3.jpg';
 import image4 from '../assets/singapore_cityscape.jpg';
 
 const Singapore = () => {
+  const [traveler, setTraveler] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+  });
+
+  const [isFormFilled, setIsFormFilled] = useState(false);
+
+  const handleChange = (e) => {
+    setTraveler({ ...traveler, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (traveler.firstName && traveler.lastName && traveler.email && traveler.phone) {
+      setIsFormFilled(true);
+      console.log(traveler);
+    } else {
+      alert('Please fill out the form first');
+    }
+  };
+  const handleBookPlan = () => {
+    if (!isFormFilled) {
+      alert('Please fill out the form first');
+    } else {
+      // Handle booking plan here
+    }
+  };
+
   return (
     <>
+       
       <div className="singapore-page">
       <div className="pic section_margin">
         <h3>Singapore</h3>
@@ -70,12 +102,89 @@ const Singapore = () => {
                 </div>
             </div>
         </div>
+        <div className="traveler-form section_margin">
+        <h4>Traveler's Details</h4>
+        <form onSubmit={handleSubmit}>
+          <label>
+            First Name:
+            <input type="text" name="firstName" value={traveler.firstName} onChange={handleChange} />
+          </label>
+          <label>
+            Last Name:
+            <input type="text" name="lastName" value={traveler.lastName} onChange={handleChange} />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" value={traveler.email} onChange={handleChange} />
+          </label>
+          <label>
+            Phone:
+            <input type="tel" name="phone" value={traveler.phone} onChange={handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
         </div>
         <div className="button-container">
-          <button className="book-plan section-margin">Book Plan</button>
+          <button className="book-plan section-margin" onClick={handleBookPlan}>Book Plan</button>
         </div>
       </div>
+      <div className='buy'>
+      <GooglePayButton
+        environment="TEST"
+        paymentRequest={{
+          apiVersion: 2,
+          apiVersionMinor: 0,
+          allowedPaymentMethods: [
+            {
+              type: 'CARD',
+              parameters: {
+                allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                allowedCardNetworks: ['MASTERCARD', 'VISA'],
+              },
+              tokenizationSpecification: {
+                type: 'PAYMENT_GATEWAY',
+                parameters: {
+                  gateway: 'example',
+                  gatewayMerchantId: 'exampleGatewayMerchantId',
+                },
+              },
+            },
+          ],
+          merchantInfo: {
+            merchantId: '12345678901234567890',
+            merchantName: 'Demo Merchant',
+          },
+          transactionInfo: {
+            totalPriceStatus: 'FINAL',
+            totalPriceLabel: 'Total',
+            totalPrice: '1',
+            currencyCode: 'INR',
+            countryCode: 'IND',
+          },
+          shippingAddressRequired: true,
+          callbackIntents: ['SHIPPING_ADDRESS', 'PAYMENT_AUTHORIZATION'],
+        }}
+        onLoadPaymentData={paymentRequest => {
+          console.log('Success', paymentRequest);
+        }}
+        onPaymentAuthorized={paymentData => {
+            console.log('Payment Authorised Success', paymentData)
+            return { transactionState: 'SUCCESS'}
+          }
+        }
+        onPaymentDataChanged={paymentData => {
+            console.log('On Payment Data Changed', paymentData)
+            return { }
+          }
+        }
+        existingPaymentMethodRequired='false'
+        buttonColor='white'
+        buttonType='Buy'
+        className='paybtn'
+      />
       </div>
+    </div>
     </>
   );
 };
