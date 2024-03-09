@@ -18,15 +18,29 @@ const Singapore = () => {
     phone: '',
   });
 
+  const [isFormFilled, setIsFormFilled] = useState(false);
+
   const handleChange = (e) => {
     setTraveler({ ...traveler, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send data to server
-    console.log(traveler);
+    if (traveler.firstName && traveler.lastName && traveler.email && traveler.phone) {
+      setIsFormFilled(true);
+      console.log(traveler);
+    } else {
+      alert('Please fill out the form first');
+    }
   };
+  const handleBookPlan = () => {
+    if (!isFormFilled) {
+      alert('Please fill out the form first');
+    } else {
+      // Handle booking plan here
+    }
+  };
+
   return (
     <>
       <div className="singapore-page">
@@ -111,7 +125,7 @@ const Singapore = () => {
       </div>
         </div>
         <div className="button-container">
-          <button className="book-plan section-margin">Book Plan</button>
+          <button className="book-plan section-margin" onClick={handleBookPlan}>Book Plan</button>
         </div>
       </div>
       </div>
