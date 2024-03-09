@@ -25,7 +25,7 @@ export default function App() {
       <Destination id="testimonials" />
       <CarouSel />
       <Contact id="contact" />
-      {/* <Login id="login" />   */}
+      
       <Footer />
       <div className="chatbot-window">
   {showChat && <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/7618e208-71b2-40dc-8fb1-d8a76d3de3b9"></iframe>}

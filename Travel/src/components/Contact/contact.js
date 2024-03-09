@@ -32,7 +32,7 @@ class Contact extends Component {
           <div className="title">
             <h4>Contact Us</h4>
           </div>
-          <form ref={this.form} onSubmit={this.sendEmail}>
+          <form ref={this.form} onSubmit={this.sendEmail} className="for">
             <div className="form-group">
               <label htmlFor="first_name"></label>
               <input
