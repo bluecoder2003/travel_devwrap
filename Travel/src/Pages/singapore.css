@@ -271,3 +271,49 @@ h1 {
     background-color: var(--secondary_color2); /* Darker green background on hover */
   }
 
+  @media only screen and (max-width: 600px) {
+    .singapore-page {
+        padding: 10px;
+    }
+
+    .pic {
+        height: 40vh;
+        border-radius: 6px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .plan {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .timeline-container {
+        margin: 20px 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .timeline-item-content {
+        max-width: 100%;
+        padding: 10px;
+        width: 90%;
+    }
+    .timeline-container::after {
+       display: none;
+    }
+
+    .button-container {
+        height: 20vh;
+    }
+
+    .book-plan {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
